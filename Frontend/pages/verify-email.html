@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Verify your Electra email address"><title>Email verification | Electra</title>
+<link rel="stylesheet" href="../css/style.css">
+<script defer src="../js/config.js"></script><script defer src="../js/api.js"></script><script defer src="../js/main.js"></script><script defer src="../js/account-recovery.js"></script></head>
+<body><header class="site-header"><div class="nav-wrap"><a class="brand" href="index.html"><span class="brand-mark">✓</span><span>Electra<br><small>Election Management</small></span></a><nav class="nav-links"><a href="index.html">Home</a><a href="login.html">Login</a></nav></div></header>
+<main><section class="page-title"><h1>Verify your email</h1><p class="muted">Verify your email address to activate your Electra account.</p></section>
+<section class="panel"><p id="verification-message" class="help" role="status" aria-live="polite">Checking verification link…</p><form id="verify-email-form" hidden><div class="form-actions"><button class="btn" type="submit">Verify email address</button></div></form><form id="resend-verification-form" hidden><div class="field"><label for="verification-email">Email address</label><input id="verification-email" name="email" type="email" autocomplete="email" required maxlength="254"></div><div class="form-actions"><button class="btn" type="submit">Resend verification email</button><a class="btn btn-secondary" href="login.html">Back to login</a></div></form><p class="help">For local development without SMTP settings, the verification link is printed in the backend terminal.</p></section></main>
+<footer class="site-footer"><div class="footer-inner"><span>Electra · Academic DBMS project</span><span>Demonstration interface only.</span></div></footer><div class="toast" role="status" aria-live="polite"></div></body></html>

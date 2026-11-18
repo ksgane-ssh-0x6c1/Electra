@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Electra academic Election Management System"><title>Party Portal | Electra</title>
+<link rel="stylesheet" href="../css/style.css">
+<script defer src="../js/config.js"></script><script defer src="../js/api.js"></script><script defer src="../js/main.js"></script><script defer src="../js/auth.js"></script><script defer src="../js/dashboard.js"></script>
+</head><body><header class="site-header"><div class="nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark">✓</span><span>Electra<br><small style="font-weight:500;color:#cbd5e1">Election Management</small></span></a>
+<nav class="nav-links" aria-label="Main navigation"><a href="index.html">Home</a><a href="results.html">Results</a><a href="login.html">Login</a></nav>
+</div></header><main>
+<section class="page-title"><div class="eyebrow" style="color:var(--blue)">Party portal</div><h1>Party dashboard</h1><p class="muted">Maintain your party details and manage candidates linked to your party account.</p></section>
+
+<div class="grid two"><section class="panel"><h2>Party profile / manifesto</h2><form id="party-profile-form"><div class="field"><label for="party-name">Party name</label><input id="party-name" required maxlength="150"></div><div class="field" style="margin-top:14px"><label for="party-symbol">Election symbol</label><input id="party-symbol" maxlength="100"></div><div class="field" style="margin-top:14px"><label for="party-contact">Official contact email</label><input id="party-contact" type="email"></div><div class="field" style="margin-top:14px"><label for="manifesto">Manifesto summary</label><textarea id="manifesto"></textarea></div><div class="form-actions"><button class="btn" type="submit">Save party profile</button></div></form></section>
+<aside class="card"><div class="card-icon">🏛️</div><h2>Party workspace</h2><p>Changes here are stored in your party record. The public party directory displays published profile details.</p><p class="help">Manifesto file upload is not included in this version; the text summary is stored.</p></aside></div>
+<section class="section panel"><h2>Register a candidate for your party</h2><form id="party-candidate-form"><div class="form-grid"><div class="field"><label for="new-candidate-name">Candidate name</label><input id="new-candidate-name" required></div><div class="field"><label for="new-candidate-constituency">Constituency</label><input id="new-candidate-constituency"></div><div class="field"><label for="new-candidate-email">Contact email</label><input id="new-candidate-email" type="email"></div><div class="field full"><label for="new-candidate-bio">Public profile summary</label><textarea id="new-candidate-bio"></textarea></div></div><div class="form-actions"><button class="btn" type="submit">Add candidate</button></div></form></section>
+<section class="section panel"><h2>My party candidates</h2><div class="table-wrap"><table><thead><tr><th>Name</th><th>Constituency</th><th>Contact</th><th>Bio</th></tr></thead><tbody id="party-candidates"><tr><td colspan="4">Loading…</td></tr></tbody></table></div></section>
+
+</main><footer class="site-footer"><div class="footer-inner"><span>© <span data-current-year></span> Electra · Academic DBMS project</span><span>Demonstration interface — not an official election service.</span></div></footer><div class="toast" role="status" aria-live="polite"></div></body></html>
